@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yan Bastos | Portifólio </title>
+
+    <!-- LINKS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+
+    <header id="home">
+        <div class="header-container">
+            <div class="container">
+                <div class="home-text">
+                    <h2>OI, EU SOU O YAN!</h2>
+                </div>
+                <div class="home-text">
+                    <h1>FRONT-END</h1>
+                    <h1>DEVELOPER</h1>
+                </div>
+                <div class="home-text">
+                    <h3>Tenho 20 anos, sou desenvolvedor frontend com <br>1 ano e meio de experiência
+                        trabalhando em<br>
+                        projetos de
+                        estudo e freelancer.</h3>
+                </div>
+
+                <div class="arrow">
+                    <i class="fa-solid fa-arrow-down"></i>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <section id="technologies">
+
+        <div class="headline">
+            <p>TECNOLOGIAS</p>
+        </div>
+
+        <div class="card-container">
+            <div class="card">
+                <img src="/w3_html5-ar21.svg" alt="">
+            </div>
+            <div class="card">
+                <img src="/w3_css-ar21.svg" alt="">
+            </div>
+            <div class="card">
+                <img src="/springio-ar21.svg" alt="">
+            </div>
+            <div class="card">
+                <img src="/reactjs-ar21.svg" alt="">
+            </div>
+            <div class="card">
+                <img class="js" src="/javascript.svg" alt="">
+            </div>
+            <div class="card">
+                <img src="/java-vertical.svg" alt="">
+            </div>
+            <div class="card">
+                <img src="/nodejs-horizontal.svg" alt="">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="resume">
+
+        <div class="headline">
+            <p>RESUMO</p>
+        </div>
+
+        <div class="resume-container" data-anime="baixo">
+            <div class="text">
+                <p class="resume-text">Me chamo <strong> Yan Bastos </strong>, quando mais novo tinha curiosidade em
+                    como fazer os
+                    jogos que jogava, assim tive meu primeiro contato com programação em C#, utilizando visual Studio e
+                    Unity, criando pequenos projetos de jogos 2d.
+                    <br>
+                    <br>
+                    Em 2022 retornei comecei a cursar analise de sistemas voltei a programar, dessa vez focado em
+                    Javascript e foco em me tornar um Fullstack.
+
+                </p>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="img">
+                <img class="resume-img" src="/perfil.png" alt="">
+            </div>
+
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="headline">
+            <p>PROJETOS</p>
+        </div>
+        <div class="projects-container">
+            <div class="project" data-anime="left">
+                <a href="https://mateus-site-457f5.web.app/" target="_blank"> <img src="/project1.png" alt="">
+                    <p><a target="_blank" class="pjr" href="https://mateus-site-457f5.web.app/">Acessar</a></p>
+
+            </div>
+            <div class="project" data-anime="left">
+                <a href="https://yanbastos-e20c5.web.app/" target="_blank"> <img src="/project2.png"
+                        alt=""></a>
+                <p><a target="_blank" class="pjr" href="https://yanbastos-e20c5.web.app/">Acessar</a></p>
+            </div>
+            <div class="project" data-anime="left">
+                <a href="https://github.com/YanBastos/login-system" target="_blank"> <img src="/project3.png"
+                        alt=""></a>
+                <p><a target="_blank" class="pjr" href="https://github.com/YanBastos/login-system">Acessar</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experiences">
+        <div class="headline">
+            <p>EXPERIÊNCIAS</p>
+        </div>
+        <div class="experience-container">
+            <div class="content-experience">
+                <div class="experience"
+                    onclick="showInfo('Responsável por entrar em contato com outras instituições da rede, desenvolvimento de imagens, vídeos e fotografia de eventos da rede')">
+                    <p class="ond">NÚCLEO DE COMUNICAÇÃO</p>
+                    <p class="qnd">AGO 2018 - DEZ 2018</p>
+                </div>
+                <div class="experience"
+                    onclick="showInfo('Responsável pelo desenvolvimento de projetos para empresas e edição de artes, tambmém auxiliava na produção da gráfica quando tempo livre')">
+                    <p class="ond">DESIGNER GRÁFICO</p>
+                    <p class="qnd">OUT 2020 - MAR 2021</p>
+                </div>
+                <div class="experience"
+                    onclick="showInfo('Responsável pelo desenvolvimento de videos para projeções, alimunação e sonorização do parque')">
+                    <p class="ond">AUXILÍAR DE
+                        PRODUÇÃO (PJ) </p>
+                    <p class="qnd">OUT 2022 - MAI 2023</p>
+                </div>
+            </div>
+
+            <div class="exp-info" id="expInfo">
+                <h2 id="expTitle"></h2>
+                <p id="expDate"></p>
+                <button class="btn-exp" onclick="hideInfo()">Fechar</button>
+            </div>
+
+
+            <div class="content-links">
+                <div class="links">
+                    <a target="_blank" href="https://github.com/YanBastos"><i class="fa-brands fa-github"></i></a>
+                    <p>Github</p>
+                </div>
+                <div class="links">
+                    <a target="_blank" href="https://www.linkedin.com/in/yan-bastos-moraes-b69843229/"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <p>Linkedin</p>
+                </div>
+                <div class="links">
+
+                    <a href="/Curriculo Yan Bastos.pdf" download="Curriculo Yan Bastos"><i
+                            class="fa-solid fa-file"></i></a>
+                    <p>Currículo</p>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <footer>
+        <div></div>
+    </footer>
+
+
+    <!-- SCRIPT -->
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
